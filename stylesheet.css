@@ -1,0 +1,336 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Roboto,sans-serif;
+}
+
+#select-lang{
+    font-size: 15px;
+}
+
+.top-header{
+    background-color: #972836;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 32px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.rating button{
+    font-size: 15px
+}
+
+.scr-read-access a{
+    text-decoration: none;
+    color: white;
+}
+
+.big-logo{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+/* top_header Ends */
+
+/* main nav starts */
+
+.main-navBar{
+    background-color: #1b305c;
+}
+
+.navList{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navList .listItems{
+    list-style: none;
+    color: white;
+    font-size: 14px;
+    padding: 10px 5px 10px 5px;
+    cursor: pointer;
+    text-shadow: #000 0 1px 8px;
+}
+
+.homeNavItem{
+    background-color: red;
+}
+
+.listItems:hover{
+    background-color: red;
+}
+
+.university_drpdwnList{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    position: absolute;
+    color: black;
+    font-size: 15px;
+    top: 190px;
+    left: 405px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 200ms ease-in, visibility 200ms ease-in, transform 200ms ease-in;
+    transition-delay: 0.3s;
+}
+
+.university_drpdwnList .university_drpdwnListItems{
+    padding: 7.5px 20px 7.5px 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.university_drpdwnList .lastBottomBorder{
+    border: none;
+}
+
+
+.university_intro_drpdwn{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    left: 295px;
+    top: 15px;
+    transition: opacity 200ms ease-in, visibility 200ms ease-in, transform 200ms ease-in;
+    transition-delay: 0.3s;
+}
+
+.university_intro_drpdwn .university_intro_drpdwnListItems{
+    padding: 7.5px 20px 7.5px 10px;
+    border-bottom: 1px solid #ccc;   
+}
+
+.university_intro_drpdwn .lastBottomBorder_emblem{
+    border: none;
+}
+
+.universityHover:hover{
+    .university_drpdwnList{
+        transform: translateY(-15px);
+        visibility: visible;
+        opacity: 2;
+    }
+}
+
+
+
+.introHover:hover{
+    .university_intro_drpdwn{
+        transform: translateY(-15px);
+        visibility: visible;
+        opacity: 2;
+    }
+}
+
+.shadowNone{
+    text-shadow: none;
+}
+
+.governance_drpdwnList{
+    background-color: white;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    font-size: 15px;
+    top: 190px;
+    left: 507px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 200ms ease-in, visibility 200ms ease-in, transform 200ms ease-in;
+    transition-delay: 0.3s;
+}
+
+.governance_drpdwnList .governance_drpdwnListItems{
+    padding: 7.5px 20px 7.5px 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.rightArrow{
+    float: right;
+}
+
+.administrative_drpdwnList{
+    background-color: white;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    font-size: 15px;
+    top: 355px;
+    left: 262px;
+    width: 200px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 200ms ease-in, visibility 200ms ease-in, transform 200ms ease-in;
+    transition-delay: 0.3s;
+}
+
+.administrative_drpdwnList .administrative_drpdwnListItems{
+    padding: 7.5px 20px 7.5px 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.governanceHover:hover{
+    .governance_drpdwnList{
+        transform: translateY(-15px);
+        visibility: visible;
+        opacity: 2;
+    }
+}
+
+.administrativeHover:hover{
+    .administrative_drpdwnList{
+        transform: translateY(-15px);
+        visibility: visible;
+        opacity: 2;
+    }
+}
+
+.academics_drpdwnList{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    color: black;
+    background-color: white;
+    top: 190px;
+    left: 624px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 200ms ease-in, visibility 200ms ease-in, transform 200ms ease-in;
+    transition-delay: 0.3s;
+}
+
+.academics_drpdwnListItems{
+    padding: 7.5px 20px 7.5px 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.school_drpdwnList{
+    background-color: white;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 390px;
+    top: 15px;
+    left: 228px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 200ms ease-in, visibility 200ms ease-in, transform 200ms ease-in;
+    transition-delay: 0.3s;
+}
+
+.school_drpdwnListItems{
+    padding: 7.5px 20px 7.5px 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.academicsHover:hover{
+    .academics_drpdwnList{
+        transform: translateY(-15px);
+        visibility: visible;
+        opacity: 2;
+    }
+}
+
+.schoolHover:hover{
+    .school_drpdwnList{
+        transform: translateY(-15px);
+        visibility: visible;
+        opacity: 2;
+    }
+}
+
+.page-1{
+    margin-top: 10px;
+}
+
+.usefulLinksHeading{
+    /* background-color: magenta; */
+    /* height: 200px;
+    width: 100px; */
+    font-size: 20px;
+    padding: 10px 0 10px 7.5px;
+    font-weight: 500;
+    border-bottom: 1px dotted black;
+    margin-bottom: 5px;
+}
+
+.imageSlider{
+    height: 647px;
+    width: 937px;
+    /* background-image: url(Assets/rejoin-1.jpg); */
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    animation: changeImage 10s ease-out infinite;
+}
+
+@keyframes changeImage{
+    0%{
+        background-image: url(Assets/rejoin-1.jpg);
+    }
+    33.33%{
+        background-image: url(Assets/yoga-day-1.jpg);
+    }
+    66.67%{
+        background-image: url(Assets/teen-saal.jpeg);
+    }
+    99.99%{
+        background-image: url(Assets/admission-2024-25-1.jpg);
+    }
+}
+
+.noticeBoard{
+    background-color: aqua;
+    height: 200px;
+    width: 100px;
+}
+
+.page-1_container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.usefulLinksText{
+    display: flex;
+    flex-direction: column;
+    background-color: #eeeeee;
+}
+
+.usefulLinksText .links{
+    padding: 7.5px 150px 7.5px 10px;
+    border-bottom: 2px solid white;
+    text-decoration: none;
+    color: black;
+    font-size: 15x;
+    transition: all 200ms;
+}
+
+.usefulLinksText .links:hover{
+    color: #972836;
+}
+
+.link_plane_text{
+    color: #c21717;
+    font-weight: 500;
+}
+
+.usefulLinksText .specialLink{
+    color: #dc3545;
+    font-size: 16px;
+    font-weight: 700;
+    animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
